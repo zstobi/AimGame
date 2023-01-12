@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    /* border: 1px solid red; */
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    display: grid;
+    place-items: center;
+    grid-template-rows: 4fr 1fr;
+
+    background-image: linear-gradient(to top, #011 0%, #000 100%)!important;
+
+    /* background: url(clouds.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+}
+
+/* GAME SECTION */
+
+section {
+    background-color: #000!important;
+    height: 70vh;
+    width: 70vw;
+
+    display: grid;
+    place-items: center;
+}
+
+.game-grid {
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(30,1fr);
+    grid-template-rows: repeat(20,1fr);
+}
+
+/* BUTTONS SECTION */
+
+nav {
+    background-color: #011!important;
+
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    place-items: center;
+}
+
+.position-container {
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    place-items: center;
+    grid-template-columns: 3fr 1fr;
+}
+
+.decorations {
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    place-items: center;
+    /* grid-template-columns: repeat(10,1fr) 2fr 2fr; */
+    /* the last display was for the 10 hearts one by one */
+    grid-template-columns: repeat(3,1fr);
+}
+
+.btnKit {
+    height: 100%;
+    width: 100%;
+    grid-column: 2;
+
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+.lifes {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+}
+
+
+.targeting {
+    grid-column: var(--columna);
+    grid-row: var(--fila);
+    background-color: var(--activado);
+}
+
+.no-margin {
+    margin: 0!important;
+}
+
+.press-start {
+    display: block;
+
+    height: 100%;
+    width: 100%;
+
+    grid-column: 9/24;
+    grid-row: 10;
+
+    text-align: center;
+}

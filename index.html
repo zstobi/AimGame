@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>title</title>
+        <meta charset='UTF-8'>
+        <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <link rel='stylesheet' href='style.css'>
+        <!-- minify -->
+        <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+        <!-- latest -->
+        <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+        <!-- core style only -->
+        <link href="https://unpkg.com/nes.css/css/nes-core.min.css" rel="stylesheet" />
+        <!-- FONT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section class="nes-container is-rounded is-dark">
+            <div class="game-grid"></div>
+        </section>
+        <nav class="nes-container is-rounded is-dark">
+            <div class="position-container">
+                <div class="decorations">
+                    <i class="snes-jp-logo"></i>
+                    <div class="lifes">
+                        <p class="life no-margin">10</p>
+                        <i id="h1" class="nes-icon heart is-empty is-small"></i>
+                    </div>
+                    <div class="clock">
+                        <p class="time no-margin"><p class="no-margin minuteOne">--</p>:<p class="no-margin seconds">--</p></p>
+                    </div>
+                </div>
+                <div class="btnKit">
+                    <button class="nes-btn is-warning start">Start</button>
+                </div>
+            </div>
+        </nav>
+        <script src='main.js'></script>
+    </body>
+</html>
